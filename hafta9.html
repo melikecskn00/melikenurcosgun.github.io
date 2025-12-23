@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Hafta 9 - Nesne ve Form Yerleştirme</title>
+</head>
+<body>
+
+    <h2>Örnek 1: Nesne Yerleştirme</h2>
+    <p>Bu bölümde sayfaya dışarıdan bir nesne (object) eklenmesi gösterilmektedir:</p>
+    <object data="deneme.txt" type="text/plain" width="300" height="100">
+        Dosya yüklenemedi.
+    </object>
+
+    <br><hr><br>
+
+    <h2>Örnek 2: Kullanıcı Kayıt Formu (Tablo Düzeni)</h2>
+    <form>
+        <table border="0">
+            <tr>
+                <td>Kullanıcı Adı:</td>
+                <td><input type="text" name="username"></td>
+            </tr>
+            <tr>
+                <td>Şifre:</td>
+                <td><input type="password" name="password"></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="Kaydet">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <br><hr><br>
+
+    <h2>Örnek 3: Sayfa İçinde Tablo Yerleştirme</h2>
+    <table border="1" width="400" align="center">
+        <tr>
+            <td align="left">Sol Hizalı Hücre</td>
+            <td align="right">Sağ Hizalı Hücre</td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center">Ortalanmış ve Birleştirilmiş Satır</td>
+        </tr>
+    </table>
+
+    <br><hr><br>
+
+    <h2>Örnek 4: Gelişmiş Hücre Ayarları</h2>
+    <table border="1" height="200" width="100%">
+        <tr>
+            <td valign="top" bgcolor="#ffcccc">Üst Hizalı (Top)</td>
+            <td valign="middle" bgcolor="#ccffcc">Orta Hizalı (Middle)</td>
+            <td valign="bottom" bgcolor="#ccccff">Alt Hizalı (Bottom)</td>
+        </tr>
+    </table>
+
+    <br><br>
+    <a href="index.html">Ana Sayfaya Dön</a>
+
+</body>
+</html>

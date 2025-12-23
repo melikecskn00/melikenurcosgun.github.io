@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Hafta 11 - CSS Seçiciler ve Kutu Modeli</title>
+    <style type="text/css">
+        /* Örnek 1 & 2: Sınıf (Class) Seçicileri */
+        h1.mavi { color: blue; }
+        h1.kirmizi { color: red; }
+
+        /* Örnek 3: Link Pozisyonları ve Stilleri */
+        A.normal { background-color: white; color: blue; }
+        A.ziyaret:visited { background-color: white; color: maroon; }
+        A.aktif:active { background-color: white; color: red; }
+        A.degisken:hover { background-color: blue; color: white; font-weight: bold; }
+
+        /* Örnek 4: Kutu Modeli Temelleri */
+        .kutu-temel {
+            width: 300px;
+            padding: 10px;
+            border: solid 5px;
+            background: yellow;
+            color: black;
+        }
+
+        /* Örnek 5: Padding Ayarları */
+        .kutu-ozel {
+            border: 2px solid blue;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Örnek 1 & 2: CSS Sınıf Seçicileri</h2>
+    <h1> Genel Başlık (Stilsiz) </h1>
+    <h1 class="mavi">Mavi sınıf seçicisi ile başlık</h1>
+    <h1 class="kirmizi">Kırmızı sınıf seçicisi ile başlık</h1>
+
+    <br><hr><br>
+
+    <h2>Örnek 3: Link Pozisyonları (Hover, Active, Visited)</h2>
+    <p>Linklerin üzerine gelerek veya tıklayarak renk değişimlerini görebilirsiniz:</p>
+    <a href="#" class="normal">Linkin normal durumu</a><br><br>
+    <a href="#" class="ziyaret">Ziyaret edilmiş link stili</a><br><br>
+    <a href="#" class="aktif">Linkin aktif (tıklanma anı) durumu</a><br><br>
+    <a href="#" class="degisken">Üzerine gelindiğinde (Hover) değişen link</a>
+
+    <br><hr><br>
+
+    <h2>Örnek 4: CSS Kutu Modeli</h2>
+    <div class="kutu-temel">
+        Internet Programcılığı - Kutu Modeli (Padding, Border, Width)
+    </div>
+
+    <br><hr><br>
+
+    <h2>Örnek 5: Detaylı Padding (İç Boşluk) Ayarları</h2>
+    <div class="kutu-ozel">
+        Bu alanda her yöne (üst, alt, sol, sağ) farklı iç boşluk değerleri verilmiştir.
+    </div>
+
+    <br><br>
+    <a href="index.html">Ana Sayfaya Dön</a>
+
+</body>
+</html>

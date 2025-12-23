@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Hafta 12 - CSS Kenarlık ve Liste Stilleri</title>
+    <style type="text/css">
+        /* Örnek 1: Kenarlık (Border) Özellikleri */
+        .kenarlik-test {
+            border-style: solid;
+            border-width: 5px;
+            border-color: red;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        /* Örnek 2: Farklı Kenarlık Stilleri */
+        .kesik-cizgi { border-style: dashed; border-width: 2px; padding: 5px; }
+        .noktali-cizgi { border-style: dotted; border-width: 2px; padding: 5px; }
+        .cift-cizgi { border-style: double; border-width: 6px; padding: 5px; }
+
+        /* Örnek 3: Liste İşaretçisi Özellikleri */
+        ul.kare { list-style-type: square; }
+        ol.roma { list-style-type: lower-roman; }
+        
+        /* Örnek 4: Liste İşaretçisi Olarak Resim Kullanma */
+        ul.ozel-isaret {
+            list-style-image: url('isaret.gif');
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Örnek 1: CSS Kenarlık (Border) Ayarları</h2>
+    <div class="kenarlik-test">
+        Bu kutunun kenarlık stili düz (solid), kalınlığı 5px ve rengi kırmızıdır.
+    </div>
+
+    <br>
+
+    <h2>Örnek 2: Farklı Kenarlık Stilleri</h2>
+    <p class="kesik-cizgi">Kesik çizgili (dashed) kenarlık örneği.</p>
+    <p class="noktali-cizgi">Noktalı (dotted) kenarlık örneği.</p>
+    <p class="cift-cizgi">Çift çizgili (double) kenarlık örneği.</p>
+
+    <br><hr><br>
+
+    <h2>Örnek 3: CSS Liste Stilleri</h2>
+    <p>Kare işaretli liste:</p>
+    <ul class="kare">
+        <li>Elma</li>
+        <li>Armut</li>
+    </ul>
+
+    <p>Küçük Roma rakamlı liste:</p>
+    <ol class="roma">
+        <li>Birinci Adım</li>
+        <li>İkinci Adım</li>
+    </ol>
+
+    <br><hr><br>
+
+    <h2>Örnek 4: Liste İşaretçisi Konumu ve Resim</h2>
+    <ul style="list-style-position: inside;">
+        <li>İşaretçi metnin içinde (inside) yer alır.</li>
+    </ul>
+    
+    <ul class="ozel-isaret">
+        <li>Bu listede işaretçi olarak 'isaret.gif' dosyası kullanılır.</li>
+    </ul>
+
+    <br><br>
+    <a href="index.html">Ana Sayfaya Dön</a>
+
+</body>
+</html>

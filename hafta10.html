@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Hafta 10 - Form Elemanları ve Butonlar</title>
+</head>
+<body>
+
+    <h2>Örnek 1: Form Giriş Elemanları</h2>
+    <form action="#">
+        <fieldset>
+            <legend>Kişisel Bilgiler</legend>
+            <p>Adınız: <input type="text" name="ad" size="20"></p>
+            <p>Şifreniz: <input type="password" name="sifre"></p>
+            
+            <p>Cinsiyetiniz:<br>
+                <input type="radio" name="cinsiyet" value="E"> Erkek<br>
+                <input type="radio" name="cinsiyet" value="K"> Kadın
+            </p>
+            
+            <p>Hobileriniz:<br>
+                <input type="checkbox" name="hobi1" value="spor"> Spor yapmak<br>
+                <input type="checkbox" name="hobi2" value="muzik"> Müzik dinlemek
+            </p>
+        </fieldset>
+    </form>
+
+    <br><hr><br>
+
+    <h2>Örnek 2: Form Buton Çeşitleri</h2>
+    <form action="#">
+        <p>Mesajınız:<br>
+            <textarea name="mesaj" rows="4" cols="30"></textarea>
+        </p>
+        
+        <input type="submit" value="Formu Gönder">
+        <input type="reset" value="Temizle">
+        <input type="button" value="Tıklayınız (Uyarı)" onclick="alert('Butona basıldı!')">
+        
+        <p>Resimli Buton Örneği:<br>
+            <input type="image" src="kaydet_butonu.jpg" alt="Gönder" width="100">
+        </p>
+    </form>
+
+    <br><br>
+    <a href="index.html">Ana Sayfaya Dön</a>
+
+</body>
+</html>

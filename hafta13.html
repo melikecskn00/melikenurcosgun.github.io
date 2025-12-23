@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Hafta 13 - CSS Katmanlar (Layer)</title>
+    <style type="text/css">
+        /* Örnek 1: Katman ve Z-Index Kullanımı */
+        .katman1 {
+            position: absolute;
+            left: 50px;
+            top: 100px;
+            width: 200px;
+            height: 100px;
+            background-color: red;
+            z-index: 1; /* Altta kalacak */
+        }
+        .katman2 {
+            position: absolute;
+            left: 80px;
+            top: 130px;
+            width: 200px;
+            height: 100px;
+            background-color: blue;
+            color: white;
+            z-index: 2; /* Üstte kalacak */
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Hafta 13: CSS Katman (Positioning) Özellikleri</h2>
+    <p>Z-index değeri büyük olan nesne, diğer nesnelerin üstünde görünür.</p>
+
+    <div class="katman1">1. Katman (Kırmızı)</div>
+    <div class="katman2">2. Katman (Mavi - Üstte)</div>
+
+    <br><br><br><br><br><br><br><br><br>
+    <a href="index.html">Ana Sayfaya Dön</a>
+
+</body>
+</html>
